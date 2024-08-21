@@ -2,14 +2,18 @@
   "compilerOptions": {
     "composite": true,
     "target": "ESNext",
-    "jsx": "react-jsx",
-    "lib": ["ESNext"],
+    "jsx": "preserve",
+    "lib": [
+      "ESNext"
+    ],
     "moduleDetection": "force",
     "baseUrl": ".",
     "module": "ESNext",
     "moduleResolution": "Bundler",
     "paths": {
-      "@/*": ["src/*"]
+      "@/*": [
+        "src/*"
+      ]
     },
     "resolveJsonModule": true,
     "allowImportingTsExtensions": false,
@@ -32,8 +36,21 @@
     "forceConsistentCasingInFileNames": true,
     "isolatedModules": true,
     "verbatimModuleSyntax": true,
-    "skipLibCheck": true
+    "skipLibCheck": true,
+    "incremental": true,
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ]
   },
-  "include": ["src/**/*"],
-  "exclude": ["node_modules", "dist"]
+  "include": [
+    "src/**/*",
+    "next-env.d.ts",
+    ".next/types/**/*.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist"
+  ]
 }
