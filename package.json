@@ -17,6 +17,7 @@
     "dev": "next dev",
     "lint": "eslint",
     "lint:fix": "eslint --fix",
+    "prepare": "lefthook install",
     "start": "next start"
   },
   "dependencies": {
