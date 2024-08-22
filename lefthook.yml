@@ -5,4 +5,4 @@ pre-commit:
       run: pnpm eslint {staged_files} --fix
     typeCheck:
       glob: '*.{ts,tsx}'
-      run: pnpm tsc {staged_files}
+      run: pnpm tsc --noEmit
